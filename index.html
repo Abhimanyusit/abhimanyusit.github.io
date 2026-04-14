@@ -106,9 +106,20 @@
 
     <div class="projects-container">
       <!-- Project 1 -->
-      <div class="project-card">
+      <div class="project-card" id="focusdefender">
         <div class="project-image">
-          <img src="images/focusdefender.png" alt="Focus Defender">
+          <div class="carousel">
+            <div class="carousel-inner">
+              <img src="images/focusdefender1.png" alt="Focus Defender Screenshot 1" class="active">
+              <img src="images/focusdefender.png" alt="Focus Defender Screenshot 2">
+              <img src="images/focusdefender3.png" alt="Focus Defender Screenshot 3">
+            </div>
+            <button class="carousel-btn prev" onclick="changeSlide(-1, 'focusdefender')">&#10094;</button>
+            <button class="carousel-btn next" onclick="changeSlide(1, 'focusdefender')">&#10095;</button>
+            <div class="carousel-dots">
+              <span class="dot active" onclick="currentSlide(0, 'focusdefender')"></span>
+            </div>
+          </div>
         </div>
         <div class="project-content">
           <h3 class="project-title">Focus Defender</h3>
@@ -131,9 +142,20 @@
         </div>
       </div>
             <!-- Project 2 -->
-      <div class="project-card">
+      <div class="project-card" id="timeflip">
         <div class="project-image">
-          <img src="images/timeflip.jpeg" alt="TimeFlip Runner">
+          <div class="carousel">
+            <div class="carousel-inner">
+              <img src="images/menu.jpeg" alt="TimeFlip Runner Screenshot 1" class="active">
+              <img src="images/timeflip.jpeg" alt="TimeFlip Runner Screenshot 2">
+              <img src="images/gameover.jpeg" alt="TimeFlip Runner Screenshot 3">
+            </div>
+            <button class="carousel-btn prev" onclick="changeSlide(-1, 'timeflip')">&#10094;</button>
+            <button class="carousel-btn next" onclick="changeSlide(1, 'timeflip')">&#10095;</button>
+            <div class="carousel-dots">
+              <span class="dot active" onclick="currentSlide(0, 'timeflip')"></span>
+            </div>
+          </div>
         </div>
         <div class="project-content">
           <h3 class="project-title">TimeFlip Runner</h3>
@@ -283,5 +305,6 @@
       <p>&copy; 2026 Abhimanyu Jha. All rights reserved.</p>
     </div>
   </footer>
+  <script src="js/carousel.js"></script>
 </body>
 </html>
