@@ -1,310 +1,454 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhimanyu Jha | Gameplay Programmer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-
-  <!-- Navigation -->
-  <nav>
-    <div class="nav-container">
-      <div class="logo">AJ</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1 class="hero-name">Abhimanyu Jha</h1>
-      <p class="hero-title">GAMEPLAY PROGRAMMER • UNITY DEVELOPER</p>
-      <p class="hero-desc">
-        Unity Developer specializing in gameplay systems, including gravity mechanics, time control, and dynamic obstacle spawning. Passionate about building smooth, performant, and engaging player experiences.
-      </p>
-
-      <div class="cta-buttons">
-        <a href="#projects" class="btn btn-primary">
-          <i class="fas fa-gamepad"></i> See My Projects
-        </a>
-        <a href="#contact" class="btn btn-secondary">
-          <i class="fa-solid fa-envelope"></i> Get In Touch
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="section-header">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="section-divider"></div>
-      <p class="section-subtitle">Expertise across game development, programming, and modern tools</p>
-    </div>
-
-    <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-icon"><i class="fas fa-gamepad"></i></div>
-        <h3 class="skill-title">Game Development</h3>
-        <div class="skill-items">
-          <span class="skill-tag">Unity Engine</span>
-          <span class="skill-tag">C# Programming</span>
-          <span class="skill-tag">Physics Systems</span>
-          <span class="skill-tag">Collision Detection</span>
-          <span class="skill-tag">Input Handling</span>
-          <span class="skill-tag">Game State</span>
-          <span class="skill-tag">WebGL</span>
-          <span class="skill-tag">Object Pooling</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhimanyu Jha | Gameplay Programmer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container nav-wrapper">
+        <a href="#hero" class="logo">&lt;AJ /&gt;</a>
+        <nav class="nav-links" id="navLinks">
+          <a href="#about" onclick="toggleMenu()">About</a>
+          <a href="#skills" onclick="toggleMenu()">Skills</a>
+          <a href="#projects" onclick="toggleMenu()">Projects</a>
+          <a href="#experience" onclick="toggleMenu()">Experience</a>
+          <a href="#education" onclick="toggleMenu()">Education</a>
+          <a href="#contact" onclick="toggleMenu()">Contact</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
         </div>
       </div>
+    </header>
 
-      <div class="skill-card">
-        <div class="skill-icon"><i class="fas fa-code"></i></div>
-        <h3 class="skill-title">Programming</h3>
-        <div class="skill-items">
-          <span class="skill-tag">C#</span>
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Spring Boot</span>
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">Html/CSS</span>
+    <!-- Hero -->
+    <section id="hero">
+      <img
+        src="https://image.qwenlm.ai/public_source/08e89bef-8f54-4412-b3e4-98c9e8cd46cf/1e2cd6624-a30b-4c8e-aa16-3bcda711c54e.png"
+        alt="Background"
+        class="hero-bg"
+      />
+      <div class="container hero-content fade-in">
+        <p class="hero-greeting">Hi, my name is</p>
+        <h1 class="hero-title">Abhimanyu Jha.</h1>
+        <p class="hero-description">
+          Unity Game Developer specializing in gameplay systems, time mechanics,
+          and interactive experiences. I build fast-paced, polished games using
+          Unity (C#), focusing on smooth mechanics and engaging player
+          experiences. Currently seeking a Junior Gameplay Programmer / Unity
+          Developer role
+        </p>
+        <div class="btn-group">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
       </div>
+    </section>
 
-      <div class="skill-card">
-        <div class="skill-icon"><i class="fas fa-tools"></i></div>
-        <h3 class="skill-title">Tools & DevOps</h3>
-        <div class="skill-items">
-          <span class="skill-tag">Git & GitHub</span>
-          <span class="skill-tag">VS Code</span>
-          <span class="skill-tag">GitHub Copilot</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">PostgreSQL</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="section-header">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="section-divider"></div>
-      <p class="section-subtitle">Showcasing gameplay systems, mechanics, and interactive design</p>
-    </div>
-
-    <div class="projects-container">
-      <!-- Project 1 -->
-      <div class="project-card" id="focusdefender">
-        <div class="project-image">
-          <div class="carousel">
-            <div class="carousel-inner">
-              <img src="images/focusdefender1.png" alt="Focus Defender Screenshot 1" class="active">
-              <img src="images/focusdefender.png" alt="Focus Defender Screenshot 2">
-              <img src="images/focusdefender3.png" alt="Focus Defender Screenshot 3">
-            </div>
-            <button class="carousel-btn prev" onclick="changeSlide(-1, 'focusdefender')">&#10094;</button>
-            <button class="carousel-btn next" onclick="changeSlide(1, 'focusdefender')">&#10095;</button>
-            <div class="carousel-dots">
-              <span class="dot active" onclick="currentSlide(0, 'focusdefender')"></span>
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="about-grid fade-in">
+          <div class="about-text">
+            <p>
+              I have a background in software engineering and experience
+              building interactive systems and gameplay mechanics. My journey
+              involves developing arcade-style game projects focusing on
+              spawning systems, collision detection, input handling, and
+              gameplay state management.
+            </p>
+            <p>
+              With professional experience as a Systems Engineer at Infosys, I
+              bring strong backend logic, database design, and system
+              optimization skills to game development. I am passionate about
+              creating polished, performant, and engaging games.
+            </p>
+            <p>Here are a few technologies I've been working with recently:</p>
+            <ul class="tech-stack-list">
+              <li>Unity Engine</li>
+              <li>C# Gameplay Programming</li>
+              <li>Physics & Collision Systems</li>
+              <li>Java & Spring Boot</li>
+              <li>Git & GitHub</li>
+              <li>SQL / PostgreSQL</li>
+            </ul>
+          </div>
+          <div class="about-img" style="position: relative">
+            <!-- Decorative code block -->
+            <div
+              style="
+                background: var(--bg-card);
+                padding: 20px;
+                border-radius: 8px;
+                font-family: var(--font-mono);
+                font-size: 0.85rem;
+                color: var(--text-secondary);
+                border: 1px solid rgba(255, 255, 255, 0.05);
+              "
+            >
+              <div style="color: var(--accent-primary); margin-bottom: 10px">
+                public class Player : MonoBehaviour
+              </div>
+              <div style="padding-left: 15px; color: #d946ef">
+                void Update()
+              </div>
+              <div style="padding-left: 15px">{</div>
+              <div style="padding-left: 30px">HandleInput();</div>
+              <div style="padding-left: 30px">MoveCharacter();</div>
+              <div style="padding-left: 30px">CheckCollisions();</div>
+              <div style="padding-left: 15px">}</div>
+              <div style="margin-top: 10px; color: #10b981">
+                // Passionate about creating engaging gameplay systems
+              </div>
             </div>
           </div>
         </div>
-        <div class="project-content">
-          <h3 class="project-title">Focus Defender</h3>
-          <div class="project-tech">
-            <span class="tech-badge">Unity</span>
-            <span class="tech-badge">C#</span>
-            <span class="tech-badge">WebGL</span>
-          </div>
-          <p class="project-desc">Arcade-style defensive shooter with spawning systems and complete game loop.</p>
-          <ul class="project-features">
-            <li>Random spawning & projectile mechanics</li>
-            <li>Advanced collision detection systems</li>
-            <li>State management: start, restart, game-over</li>
-            <li>Full UI, scoring, and audio integration</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://abhi8451.itch.io/focus-defender" target="_blank" class="project-link link-primary">Play Game</a>
-            <a href="https://github.com/Abhimanyusit/Focus_Defender_Game.git" target="_blank" class="project-link link-secondary">GitHub</a>
-          </div>
-        </div>
       </div>
-            <!-- Project 2 -->
-      <div class="project-card" id="timeflip">
-        <div class="project-image">
-          <div class="carousel">
-            <div class="carousel-inner">
-              <img src="images/menu.jpeg" alt="TimeFlip Runner Screenshot 1" class="active">
-              <img src="images/timeflip.jpeg" alt="TimeFlip Runner Screenshot 2">
-              <img src="images/gameover.jpeg" alt="TimeFlip Runner Screenshot 3">
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" style="background: var(--bg-secondary)">
+      <div class="container">
+        <h2 class="section-title fade-in">Technical Skills</h2>
+        <div class="skills-grid fade-in">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                />
+              </svg>
             </div>
-            <button class="carousel-btn prev" onclick="changeSlide(-1, 'timeflip')">&#10094;</button>
-            <button class="carousel-btn next" onclick="changeSlide(1, 'timeflip')">&#10095;</button>
-            <div class="carousel-dots">
-              <span class="dot active" onclick="currentSlide(0, 'timeflip')"></span>
+            <h3 class="skill-title">Game Development</h3>
+            <p class="skill-desc">
+              Unity Engine, C# Gameplay Programming, Game Object Behaviors,
+              Physics & Collision Systems, WebGL Build & Deployment.
+            </p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path
+                  d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-title">Programming</h3>
+            <p class="skill-desc">
+              C#, Java, and Python. Experienced in object-oriented design and
+              algorithm implementation.
+            </p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-title">Tools & Workflow</h3>
+            <p class="skill-desc">
+              Git, GitHub, VS Code, GitHub Copilot, Docker.
+            </p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path
+                  d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-title">Data & Backend</h3>
+            <p class="skill-desc">SQL, PostgreSQL, Spring Boot, REST APIs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="projects-grid fade-in">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img
+                src="./images/focusdefender.png"
+                alt="Focus Defender"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" title="GitHub">
+                    <svg class="icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="project-link" title="Play Game">
+                    <svg class="icon" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-header">
+                <h3 class="project-title">Focus Defender</h3>
+              </div>
+              <p class="project-tech">Unity (C#) | WebGL</p>
+              <p class="project-desc">
+                Arcade-style defensive shooter where players defend a desk from
+                falling social media distractions, featuring random spawning,
+                projectile mechanics, collision detection, and complete game
+                state management with integrated UI, scoring, and audio systems.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">Physics</span>
+                <span class="tag">WebGL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img
+                src="./images/timeflip.jpeg"
+                alt="TimeFlip Runner"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" title="GitHub">
+                    <svg class="icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-header">
+                <h3 class="project-title">TimeFlip Runner</h3>
+              </div>
+              <p class="project-tech">Unity (C#) | Mobile (Android)</p>
+              <p class="project-desc">
+                Endless runner with gravity inversion and slow-motion mechanics,
+                featuring dynamic difficulty scaling, object pooling
+                optimization, physics-based collision, parallax backgrounds, and
+                PlayerPrefs persistence for a smooth and engaging gameplay
+                experience.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Android</span>
+                <span class="tag">Optimization</span>>
+                <span class="tag">UI/UX</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="project-content">
-          <h3 class="project-title">TimeFlip Runner</h3>
-          <div class="project-tech">
-            <span class="tech-badge">Unity</span>
-            <span class="tech-badge">C#</span>
-            <span class="tech-badge">Android</span>
-          </div>
-          <p class="project-desc">Dynamic mobile runner game with gravity mechanics and adaptive difficulty scaling.</p>
-          <ul class="project-features">
-            <li>Gravity inversion & slow-motion mechanics</li>
-            <li>Dynamic difficulty with performance optimization</li>
-            <li>Object pooling for smooth gameplay</li>
-            <li>Physics-based collision systems</li>
-          </ul>
-          <div class="project-links">
-            <a href="#" class="project-link link-primary">Coming Soon</a>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" style="background: var(--bg-secondary)">
+      <div class="container">
+        <h2 class="section-title fade-in">Work Experience</h2>
+        <div class="timeline fade-in">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Oct 2022 – Apr 2025</div>
+            <h3 class="timeline-role">Systems Engineer</h3>
+            <div class="timeline-company">Infosys Limited, Mumbai</div>
+            <ul class="timeline-content">
+              <li>
+                Developed backend application logic using Java and Spring Boot
+                for enterprise systems.
+              </li>
+              <li>
+                Designed relational database schemas and implemented PL/SQL
+                procedures for data operations.
+              </li>
+              <li>
+                Monitored application performance using Dynatrace to identify
+                system bottlenecks.
+              </li>
+              <li>
+                Managed containerized application deployments using Docker and
+                OpenShift.
+              </li>
+              <li>
+                Collaborated with cross-functional teams to troubleshoot
+                production issues.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience Section -->
-  <section id="experience">
-    <div class="section-header">
-      <h2 class="section-title">Professional Experience</h2>
-      <div class="section-divider"></div>
-      <p class="section-subtitle">Building robust systems at industry-leading companies</p>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <span class="timeline-date">Oct 2022 – Apr 2025</span>
-        <h3 class="timeline-title">Systems Engineer</h3>
-        <p class="timeline-company">Infosys Limited • Mumbai, India</p>
-        <ul class="timeline-desc" style="list-style-type: none;">
-          <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.8rem;"></i> Developed backend application logic using Java and Spring Boot for enterprise systems</li>
-          <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.8rem;"></i> Designed relational database schemas and implemented PL/SQL procedures</li>
-          <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.8rem;"></i> Monitored application performance using Dynatrace to identify bottlenecks</li>
-          <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.8rem;"></i> Managed containerized deployments with Docker and OpenShift</li>
-          <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.8rem;"></i> Collaborated with cross-functional teams on production issue resolution</li>
-        </ul>
+    <!-- Education & Certifications -->
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title fade-in">Education & Certifications</h2>
+        <div class="edu-grid fade-in">
+          <div class="edu-card">
+            <div class="edu-year">May 2022</div>
+            <h3 class="edu-degree">B.E. in Information Technology</h3>
+            <div class="edu-school">
+              Sinhgad Institute of Technology, Mumbai
+            </div>
+            <div
+              style="
+                margin-top: 10px;
+                color: var(--accent-primary);
+                font-family: var(--font-mono);
+                font-size: 0.9rem;
+              "
+            >
+              CGPA: 8.91/10
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-year">2025</div>
+            <h3 class="edu-degree">Oracle Cloud Infrastructure 2025</h3>
+            <div class="edu-school">Certified Generative AI Professional</div>
+            <div class="edu-school">Certified AI Foundations Associate</div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Education Section -->
-  <section id="education">
-    <div class="section-header">
-      <h2 class="section-title">Education & Certifications</h2>
-      <div class="section-divider"></div>
-      <p class="section-subtitle">Continuous learning and professional development</p>
-    </div>
-
-    <div class="education-grid">
-      <div class="education-card">
-        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
-        <h3 class="education-title">Bachelor of Engineering</h3>
-        <p class="education-subtitle">Information Technology</p>
-        <p class="education-detail">Sinhgad Institute of Technology</p>
-        <p class="education-detail">Lonavala, Mumbai • May 2022</p>
-        <p class="education-detail" style="font-weight: 700; color: var(--secondary); margin-top: 0.5rem;">CGPA: 8.91 / 10</p>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container fade-in">
+        <h2 class="contact-title">Get In Touch</h2>
+        <p class="contact-text">
+          I am currently looking for a Junior Gameplay Programmer or Unity
+          Developer role. Whether you have a question or just want to say hi,
+          I'll try my best to get back to you!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:abhimanyujha84@gmail.com" class="contact-link">
+            <div class="contact-icon">
+              <svg class="icon icon-lg" viewBox="0 0 24 24">
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                />
+              </svg>
+            </div>
+            <span>Email</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abhimanyu-jha-204aab157"
+            target="_blank"
+            class="contact-link"
+          >
+            <div class="contact-icon">
+              <svg class="icon icon-lg" viewBox="0 0 24 24">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                />
+              </svg>
+            </div>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <a href="mailto:abhimanyujha84@gmail.com" class="btn btn-primary"
+          >Say Hello</a
+        >
       </div>
+    </section>
 
-      <div class="education-card">
-        <div class="education-icon"><i class="fas fa-certificate"></i></div>
-        <h3 class="education-title">Oracle Cloud Certifications</h3>
-        <ul class="cert-list">
-          <li>OCI 2025 Certified Generative AI Professional</li>
-          <li>OCI 2025 Certified AI Foundations Associate</li>
-        </ul>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>Designed & Built by Abhimanyu Jha</p>
+        <p style="margin-top: 5px; font-size: 0.8rem; opacity: 0.6">
+          © 2026 All Rights Reserved
+        </p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="contact-content">
-      <h2 class="section-title">Let's Create Something Amazing</h2>
-      <p class="section-subtitle">Open to exciting opportunities in gameplay programming and game development</p>
-      
-      <p style="color: var(--text-muted); margin-top: 2rem; font-size: 1.05rem; line-height: 1.8;">
-        Whether you're looking for a talented gameplay programmer, need help building engaging game mechanics, 
-        or just want to chat about game development, I'd love to hear from you!
-      </p>
-
-      <div class="contact-links">
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abhimanyujha84@gmail.com" target="_blank" title="Email" class="contact-link">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/abhimanyu-jha-204aab157" target="_blank" title="LinkedIn" class="contact-link">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/Abhimanyusit" target="_blank" title="GitHub" class="contact-link">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="tel:+918451060982" title="Phone" class="contact-link">
-          <i class="fas fa-phone"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    // Smooth scroll behavior for nav links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-
-    // Logo click to scroll to home
-    document.querySelector('.logo').addEventListener('click', function() {
-      const target = document.querySelector('#home');
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
+    <script>
+      // Mobile Menu Toggle
+      function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
       }
-    });
 
-    // Add scroll animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
+      // Scroll Animation Observer
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
 
-    const observer = new IntersectionObserver(function(entries) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.animation = 'fadeInUp 0.6s ease-out forwards';
-          observer.unobserve(entry.target);
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".fade-in").forEach((el) => {
+        observer.observe(el);
+      });
+
+      // Smooth Scroll for Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            const headerOffset = 70;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition =
+              elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Parallax Effect for Hero Image
+      window.addEventListener("scroll", () => {
+        const scrolled = window.pageYOffset;
+        const heroBg = document.querySelector(".hero-bg");
+        if (heroBg) {
+          heroBg.style.transform = `translateY(${scrolled * 0.4}px)`;
         }
       });
-    }, observerOptions);
-
-    document.querySelectorAll('section > *:not(.section-header)').forEach(el => {
-      observer.observe(el);
-    });
-  </script>
-
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2026 Abhimanyu Jha. All rights reserved.</p>
-    </div>
-  </footer>
-  <script src="js/carousel.js"></script>
-</body>
+    </script>
+  </body>
 </html>
