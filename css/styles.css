@@ -408,6 +408,30 @@ section {
   border-color: var(--accent-primary);
 }
 
+.project-coming-soon {
+  width: auto;
+  height: auto;
+  min-width: 130px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 14px 18px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.16);
+  pointer-events: none;
+  cursor: default;
+}
+
+.project-coming-soon:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
 .project-info {
   padding: 25px;
 }
@@ -580,6 +604,17 @@ section {
   color: var(--text-secondary);
   margin-bottom: 40px;
   font-size: 1.1rem;
+}
+
+.contact-email {
+  color: var(--text-secondary);
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.contact-email a {
+  color: var(--accent-primary);
+  text-decoration: underline;
 }
 
 .contact-links {
