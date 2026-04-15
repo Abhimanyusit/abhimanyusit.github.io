@@ -352,6 +352,7 @@ section {
   position: relative;
   height: 200px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .project-img {
@@ -365,65 +366,54 @@ section {
   transform: scale(1.05);
 }
 
-.project-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: var(--transition);
-}
-
-.project-card:hover .project-overlay {
-  opacity: 1;
-}
-
 .project-links {
   display: flex;
-  gap: 20px;
+  gap: 16px;
+  margin-top: 12px;
+  flex-wrap: wrap;
 }
 
 .project-link {
-  color: #fff;
-  font-size: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: var(--bg-card);
+  padding: 10px 16px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: var(--transition);
+  text-decoration: none;
 }
 
 .project-link:hover {
   background: var(--accent-primary);
-  color: #000;
+  color: var(--bg-color);
   border-color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
 }
 
 .project-coming-soon {
   width: auto;
   height: auto;
-  min-width: 130px;
-  padding: 0 18px;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  font-weight: 700;
+  min-width: 120px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  padding: 14px 18px;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.16);
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   pointer-events: none;
   cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-coming-soon:hover {
@@ -437,9 +427,6 @@ section {
 }
 
 .project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 15px;
 }
 
@@ -447,6 +434,7 @@ section {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--text-primary);
+  margin-bottom: 8px;
 }
 
 .project-tech {
